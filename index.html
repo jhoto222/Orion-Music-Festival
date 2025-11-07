@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Orion Music Festival</title>
+
+</head>
+
+<body>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="container">
+                <div class="brand">Orion Fest</div>
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#lineup">Lineup</a>
+                    <a href="#flowarts">Flowarts</a>
+                    <a href="#yoga">Yoga</a>
+                    <button id="theme-button" type="button" class="btn btn-outline nav-btn" aria-pressed="false">Toggle Dark Mode</button>
+                </div>
+            </div>
+        </nav>
+
+
+
+    <header class="header-container" role="banner">
+        <div class="header-item hero">
+            <h1 id="title">Orion Music Festival</h1>
+            <p class="lead">A cosmic rave experience where music meets the universe.</p>
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="#rsvp">RSVP</a>
+                <a class="btn btn-outline" href="#lineup">View Lineup</a>
+            </div>
+        </div>
+    </header>
+
+
+    <main id="main">
+    <section aria-labelledby="about">
+    <h2 id="about">About the Event</h2>
+    <p>The Orion Music Festival is a three-day outdoor rave inspired by celestial themes like stars, planets, and
+        galaxies. Designed for electronic music lovers, especially fans of dubstep, riddim, drum and bass, and techno,
+        the event features multiple stages named Sun, Moon, Stars, and Galaxy. Alongside the music, the festival offers
+        immersive art installations and community-based group sessions to connect like-minded individuals. It’s the
+        ultimate cosmic escape for ravers, creatives, and anyone who wants to dance under the stars.</p>
+
+    <h3>What to Expect</h3>
+    <h4>Unforgettable vibes, epic performances, and a weekend to remember.</h4>
+    <ul>
+        <li> <b>Live Music:</b> <i>Experience performances from top headliners and rising stars across multiple
+                stages.</i></li>
+        <li> <b>Food & Vendors:</b> <i>Enjoy a variety of local food trucks, artisan vendors, and pop-up
+                experiences.</i></li>
+        <li> <b>Community & Culture:</b> <i>Connect with fellow music lovers, explore interactive art installations, and
+                celebrate under the stars.</i></li>
+    </ul>
+
+
+    <h2 id="lineup">Event Schedule</h2>
+    <img class="content-image" alt="Festival Lineup" src="img/ChatGPT Image Jun 18, 2025, 07_36_39 PM.png" height=900 />
+
+    <h3 id="flowarts">Flow Arts</h3>
+    <p>Join us for an immersive flow arts experience where movement meets mindfulness. Explore the art of poi spinning,
+        hooping, juggling, and dance in a space that celebrates self-expression and community. No experience needed—just
+        curiosity and a love for creativity.</p>
+    <img class="content-image" alt="Flow Arts Poster" src="img/ChatGPT Image Jul 1, 2025, 11_23_27 PM.png" height=700 />
+
+    <h3 id="yoga">Yoga</h3>
+    <p>Start your day with a grounding yoga session under the stars. Whether you're a beginner or experienced yogi, our
+        classes focus on breath, balance, and inner peace—a perfect reset during a weekend of music and magic.</p>
+    <img class="content-image" alt="Yoga Poster" src="img/Yoga_Poster_Small.png" height=700 />
+
+
+    <div id="rsvp">
+        <h2>RSVP</h2>
+        <div class="rsvp-container">
+            <div class="rsvp-para">
+                <p>✨ Get ready for the ultimate summer experience — Orion Fest is coming, and you don’t want to miss it.
+                    From live music that'll keep you dancing all night to epic food trucks, chill zones, and surprise
+                    giveaways, this is the vibe you've been waiting for. Whether you're coming for the music, the
+                    memories,
+                    or just to vibe with friends under the stars, Orion Fest is where it all goes down. Spots are
+                    limited,
+                    so hit that RSVP button now and secure your place in the galaxy’s coolest celebration 🌌🎶🌮</p>
+            </div>
+            <div class="rsvp-participants">
+                <p>🪐 DJ from Texas has RSVP'd.</p>
+                <p>🪐 Amy from New York has RSVP'd.</p>
+                <p>🪐 Teresa from Montana has RSVP'd.</p>
+            </div>
+        </div>
+
+
+            <div class="form-container">
+                <form id="rsvp-form" title="rsvp-form" aria-label="RSVP form">
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="you@example.com">
+
+                    <label for="state">Home State</label>
+                    <input type="text" id="state" name="state" placeholder="e.g. California">
+
+                    <div class="form-actions">
+                      <button id="rsvp-button" class="btn btn-primary" type="submit">Submit RSVP</button>
+                    </div>
+                </form>
+            </div>
+    </div>
+
+        </section>
+
+
+
+
+    <div id="success-modal" class="modal">
+        <div class="modal-container">
+            <div class="modal-item">
+                <p id="modal-text">Thanks for RSVPing!</p>
+            </div>
+            <div class="modal-item">
+                <img id="modal-img" src="img/ChatGPT_Image_Aug_5_2025_10_56_05_PM_optimized.png" alt="Alien waving"
+                    width="150">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--<h2>Links</h2>
+
+
+    <a class="block" href="https://www.codepath.org">
+        <article>
+            <h3>Link title</h3>
+            <p>Link description</p>
+        </article>
+    </a> -->
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
